@@ -1,0 +1,14 @@
+{
+  "name": "9gng-bot-anuncio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Anuncio único de /9 GNG en Discord",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.6.1"
+  }
+}

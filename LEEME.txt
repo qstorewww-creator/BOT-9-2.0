@@ -1,0 +1,29 @@
+/9 GNG BOT — INSTRUCCIONES (Windows)
+
+1. Extrae el ZIP. La carpeta incluye index.js, logo.png y package.json.
+2. Instala Node.js reciente compatible con discord.js (consulta nodejs.org).
+3. Duplica .env.example y cambia el nombre de la copia a .env.
+4. En el archivo .env rellena TOKEN y CANAL_ID. NO compartas TOKEN.
+   TOKEN: Discord Developer Portal > tu aplicación > Bot > Token.
+   CANAL_ID: Discord > Ajustes > Avanzado > Modo desarrollador; clic derecho
+   en el canal de texto elegido > Copiar ID.
+5. Asegúrate de que tu bot esté en el servidor y pueda ver el canal, enviar
+   mensajes, insertar enlaces y adjuntar archivos.
+6. Abre la carpeta en una terminal (Explorador de Windows: barra de dirección,
+   escribe cmd, pulsa Enter) y ejecuta estos comandos:
+     node -v
+     npm install
+     npm start
+7. El mensaje se manda automáticamente al canal elegido la primera vez.
+   Se crea anuncio_estado.json para bloquear futuros envíos.
+8. NO borres anuncio_estado.json ni el directorio si quieres evitar duplicados.
+   Si dice 'pendiente', revisa primero el canal: puede que Discord lo haya
+   publicado a pesar de perderse la confirmación.
+
+IMPORTANTE: Si /9 BOT ya tiene un proyecto funcionando con otros comandos o
+funciones, no reemplaces sus archivos con este proyecto. Hay que integrar la
+lógica del anuncio en su código actual, usando el mismo cliente Discord.
+Este ZIP es una versión independiente para un bot que aún no tiene código.
+El registro es local: conserva la carpeta entre reinicios y ejecuta solo una
+instancia. No garantiza evitar duplicados si borras el estado, reinicias en
+almacenamiento efímero o arrancas copias separadas.
